@@ -174,6 +174,13 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
     }
     if (self.titles.count) {
         cell.title = self.titles[indexPath.item];
+        //config
+        cell.titleLabelBackgroundColor = self.titleLabelBackgroundColor;
+        cell.titleLabelHeight = self.titleLabelHeight;
+        cell.titleLabelTextColor = self.titleLabelTextColor;
+        cell.titleLabelTextFont = self.titleLabelTextFont;
+        cell.imageView.contentMode = self.carouselImageViewContentMode;
+        cell.clipsToBounds = YES;
     }
     
     return cell;
@@ -184,6 +191,32 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
     if (self.didSelectCarouselItemBlock) {
         self.didSelectCarouselItemBlock(indexPath.item);
     }
+}
+
+#pragma mark - configure 📌
+- (UIColor *)titleLabelBackgroundColor
+{
+    return _titleLabelBackgroundColor ? : [UIColor clearColor];
+}
+
+- (CGFloat)titleLabelHeight
+{
+    return _titleLabelHeight ? : 15.f;
+}
+
+- (UIColor *)titleLabelTextColor
+{
+    return _titleLabelTextColor ? : [UIColor blackColor];
+}
+
+- (UIFont *)titleLabelTextFont
+{
+    return _titleLabelTextFont ? : [UIFont systemFontOfSize:12.f];
+}
+
+- (UIViewContentMode)carouselImageViewContentMode
+{
+    return _carouselImageViewContentMode ? : UIViewContentModeScaleAspectFill;
 }
 
 #pragma mark - scrollView delegate 📌
@@ -200,7 +233,6 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     int page = (int) (scrollView.contentOffset.x/scrollView.frame.size.width + 0.5) % self.images.count;
-    
     _pageControl.currentPage = page;
 }
 

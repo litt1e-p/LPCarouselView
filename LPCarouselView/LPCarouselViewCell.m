@@ -44,7 +44,6 @@
 - (void)setupImageView
 {
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
     _imageView             = imageView;
     [self.contentView addSubview:imageView];
 }
@@ -63,13 +62,17 @@
     _titleLabel.text = [NSString stringWithFormat:@"%@", title];
 }
 
+- (CGFloat)titleLabelHeight
+{
+    return _titleLabelHeight ? : 15;
+}
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     _imageView.frame    = self.bounds;
     CGFloat titleLabelW = self.frame.size.width;
-    CGFloat titleLabelH = _titleLabelHeight;
+    CGFloat titleLabelH = self.titleLabelHeight;
     CGFloat titleLabelX = 0;
     CGFloat titleLabelY = self.frame.size.height - titleLabelH;
     _titleLabel.frame   = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);

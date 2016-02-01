@@ -28,7 +28,12 @@ typedef NSArray *(^TitlesDataSourceBlock)();
 @interface LPCarouselView : UIView
 
 @property (nonatomic, assign) CarouselViewPageControlPosition pageControlPosition;
-@property (nonatomic, assign) CGFloat scrollDuration;
+@property (nonatomic, assign) CGFloat scrollDuration;//default 2.f
+@property (nonatomic, assign) UIViewContentMode carouselImageViewContentMode;
+@property (nonatomic, strong) UIColor *titleLabelTextColor; //default blackColor
+@property (nonatomic, strong) UIFont  *titleLabelTextFont;
+@property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
+@property (nonatomic, assign) CGFloat titleLabelHeight;
 
 + (instancetype)carouselViewWithFrame:(CGRect)frame
                      placeholderImage:(UIImage *)placeholderImage
