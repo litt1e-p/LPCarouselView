@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D2AAAF1C5D01CB00F17AA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2AAAE1C5D01CB00F17AA1 /* main.m */; };
+		04D2AAB21C5D01CB00F17AA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2AAB11C5D01CB00F17AA1 /* AppDelegate.m */; };
+		04D2AAB51C5D01CB00F17AA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2AAB41C5D01CB00F17AA1 /* ViewController.m */; };
+		04D2AAB81C5D01CB00F17AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AAB61C5D01CB00F17AA1 /* Main.storyboard */; };
+		04D2AABA1C5D01CB00F17AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AAB91C5D01CB00F17AA1 /* Assets.xcassets */; };
+		04D2AABD1C5D01CB00F17AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AABB1C5D01CB00F17AA1 /* LaunchScreen.storyboard */; };
+		04D2AAC71C5D01F500F17AA1 /* LPCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2AAC61C5D01F500F17AA1 /* LPCarouselView.m */; };
+		04D2AACA1C5D021200F17AA1 /* LPCarouselViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2AAC91C5D021200F17AA1 /* LPCarouselViewCell.m */; };
+		04D2AADB1C5EEC5A00F17AA1 /* carousel01.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AAD61C5EEC5A00F17AA1 /* carousel01.png */; };
+		04D2AADC1C5EEC5A00F17AA1 /* carousel02.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AAD71C5EEC5A00F17AA1 /* carousel02.png */; };
+		04D2AADD1C5EEC5A00F17AA1 /* carousel03.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AAD81C5EEC5A00F17AA1 /* carousel03.png */; };
+		04D2AADE1C5EEC5A00F17AA1 /* carousel04.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AAD91C5EEC5A00F17AA1 /* carousel04.png */; };
+		04D2AADF1C5EEC5A00F17AA1 /* carousel05.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D2AADA1C5EEC5A00F17AA1 /* carousel05.png */; };
+		E82088055B234D63970330E6 /* libPods-LPCarouselViewSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D38C88A5F10EA69B81111E /* libPods-LPCarouselViewSample.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04D2AAAA1C5D01CB00F17AA1 /* LPCarouselViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPCarouselViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D2AAAE1C5D01CB00F17AA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04D2AAB01C5D01CB00F17AA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		04D2AAB11C5D01CB00F17AA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		04D2AAB31C5D01CB00F17AA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04D2AAB41C5D01CB00F17AA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04D2AAB71C5D01CB00F17AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04D2AAB91C5D01CB00F17AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		04D2AABC1C5D01CB00F17AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04D2AABE1C5D01CB00F17AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		04D2AAC51C5D01F500F17AA1 /* LPCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCarouselView.h; sourceTree = "<group>"; };
+		04D2AAC61C5D01F500F17AA1 /* LPCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCarouselView.m; sourceTree = "<group>"; };
+		04D2AAC81C5D021200F17AA1 /* LPCarouselViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCarouselViewCell.h; sourceTree = "<group>"; };
+		04D2AAC91C5D021200F17AA1 /* LPCarouselViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCarouselViewCell.m; sourceTree = "<group>"; };
+		04D2AAD61C5EEC5A00F17AA1 /* carousel01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel01.png; sourceTree = "<group>"; };
+		04D2AAD71C5EEC5A00F17AA1 /* carousel02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel02.png; sourceTree = "<group>"; };
+		04D2AAD81C5EEC5A00F17AA1 /* carousel03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel03.png; sourceTree = "<group>"; };
+		04D2AAD91C5EEC5A00F17AA1 /* carousel04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel04.png; sourceTree = "<group>"; };
+		04D2AADA1C5EEC5A00F17AA1 /* carousel05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel05.png; sourceTree = "<group>"; };
+		473A9CA9344D68090DDB890F /* Pods-LPCarouselViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCarouselViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPCarouselViewSample/Pods-LPCarouselViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		BA3A0AE1333D3E5A6B465491 /* Pods-LPCarouselViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCarouselViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPCarouselViewSample/Pods-LPCarouselViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D38C88A5F10EA69B81111E /* libPods-LPCarouselViewSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPCarouselViewSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D2AAA71C5D01CB00F17AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82088055B234D63970330E6 /* libPods-LPCarouselViewSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D2AAA11C5D01CB00F17AA1 = {
+			isa = PBXGroup;
+			children = (
+				1531C0101779B402BCE8B1D9 /* Frameworks */,
+				04D2AAAC1C5D01CB00F17AA1 /* LPCarouselViewSample */,
+				B93B2B6A046694E349315E26 /* Pods */,
+				04D2AAAB1C5D01CB00F17AA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04D2AAAB1C5D01CB00F17AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D2AAAA1C5D01CB00F17AA1 /* LPCarouselViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D2AAAC1C5D01CB00F17AA1 /* LPCarouselViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				04D2AACB1C5DC5FF00F17AA1 /* carouselImages */,
+				04D2AAC41C5D01E000F17AA1 /* LPCarouselView */,
+				04D2AAB31C5D01CB00F17AA1 /* ViewController.h */,
+				04D2AAB41C5D01CB00F17AA1 /* ViewController.m */,
+				04D2AAAD1C5D01CB00F17AA1 /* Supporting Files */,
+			);
+			path = LPCarouselViewSample;
+			sourceTree = "<group>";
+		};
+		04D2AAAD1C5D01CB00F17AA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04D2AAAE1C5D01CB00F17AA1 /* main.m */,
+				04D2AAB01C5D01CB00F17AA1 /* AppDelegate.h */,
+				04D2AAB11C5D01CB00F17AA1 /* AppDelegate.m */,
+				04D2AAB91C5D01CB00F17AA1 /* Assets.xcassets */,
+				04D2AABE1C5D01CB00F17AA1 /* Info.plist */,
+				04D2AABB1C5D01CB00F17AA1 /* LaunchScreen.storyboard */,
+				04D2AAB61C5D01CB00F17AA1 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04D2AAC41C5D01E000F17AA1 /* LPCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				04D2AAC51C5D01F500F17AA1 /* LPCarouselView.h */,
+				04D2AAC61C5D01F500F17AA1 /* LPCarouselView.m */,
+				04D2AAC81C5D021200F17AA1 /* LPCarouselViewCell.h */,
+				04D2AAC91C5D021200F17AA1 /* LPCarouselViewCell.m */,
+			);
+			path = LPCarouselView;
+			sourceTree = "<group>";
+		};
+		04D2AACB1C5DC5FF00F17AA1 /* carouselImages */ = {
+			isa = PBXGroup;
+			children = (
+				04D2AAD61C5EEC5A00F17AA1 /* carousel01.png */,
+				04D2AAD71C5EEC5A00F17AA1 /* carousel02.png */,
+				04D2AAD81C5EEC5A00F17AA1 /* carousel03.png */,
+				04D2AAD91C5EEC5A00F17AA1 /* carousel04.png */,
+				04D2AADA1C5EEC5A00F17AA1 /* carousel05.png */,
+			);
+			path = carouselImages;
+			sourceTree = "<group>";
+		};
+		1531C0101779B402BCE8B1D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6D38C88A5F10EA69B81111E /* libPods-LPCarouselViewSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B93B2B6A046694E349315E26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A0AE1333D3E5A6B465491 /* Pods-LPCarouselViewSample.debug.xcconfig */,
+				473A9CA9344D68090DDB890F /* Pods-LPCarouselViewSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04D2AAA91C5D01CB00F17AA1 /* LPCarouselViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D2AAC11C5D01CB00F17AA1 /* Build configuration list for PBXNativeTarget "LPCarouselViewSample" */;
+			buildPhases = (
+				78652568FC910E05CBADBD29 /* Check Pods Manifest.lock */,
+				04D2AAA61C5D01CB00F17AA1 /* Sources */,
+				04D2AAA71C5D01CB00F17AA1 /* Frameworks */,
+				04D2AAA81C5D01CB00F17AA1 /* Resources */,
+				D7BB1D0A6AAF376B9C74BF54 /* Embed Pods Frameworks */,
+				BA6C15733E120800CD51D44E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPCarouselViewSample;
+			productName = LPCarouselViewSample;
+			productReference = 04D2AAAA1C5D01CB00F17AA1 /* LPCarouselViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D2AAA21C5D01CB00F17AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "litt1e-p";
+				TargetAttributes = {
+					04D2AAA91C5D01CB00F17AA1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 04D2AAA51C5D01CB00F17AA1 /* Build configuration list for PBXProject "LPCarouselViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D2AAA11C5D01CB00F17AA1;
+			productRefGroup = 04D2AAAB1C5D01CB00F17AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D2AAA91C5D01CB00F17AA1 /* LPCarouselViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04D2AAA81C5D01CB00F17AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D2AADD1C5EEC5A00F17AA1 /* carousel03.png in Resources */,
+				04D2AADB1C5EEC5A00F17AA1 /* carousel01.png in Resources */,
+				04D2AABD1C5D01CB00F17AA1 /* LaunchScreen.storyboard in Resources */,
+				04D2AADE1C5EEC5A00F17AA1 /* carousel04.png in Resources */,
+				04D2AADF1C5EEC5A00F17AA1 /* carousel05.png in Resources */,
+				04D2AABA1C5D01CB00F17AA1 /* Assets.xcassets in Resources */,
+				04D2AADC1C5EEC5A00F17AA1 /* carousel02.png in Resources */,
+				04D2AAB81C5D01CB00F17AA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78652568FC910E05CBADBD29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6C15733E120800CD51D44E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPCarouselViewSample/Pods-LPCarouselViewSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BB1D0A6AAF376B9C74BF54 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPCarouselViewSample/Pods-LPCarouselViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04D2AAA61C5D01CB00F17AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D2AAC71C5D01F500F17AA1 /* LPCarouselView.m in Sources */,
+				04D2AACA1C5D021200F17AA1 /* LPCarouselViewCell.m in Sources */,
+				04D2AAB51C5D01CB00F17AA1 /* ViewController.m in Sources */,
+				04D2AAB21C5D01CB00F17AA1 /* AppDelegate.m in Sources */,
+				04D2AAAF1C5D01CB00F17AA1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04D2AAB61C5D01CB00F17AA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D2AAB71C5D01CB00F17AA1 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../.;
+			sourceTree = "<group>";
+		};
+		04D2AABB1C5D01CB00F17AA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D2AABC1C5D01CB00F17AA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../.;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04D2AABF1C5D01CB00F17AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04D2AAC01C5D01CB00F17AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D2AAC21C5D01CB00F17AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3A0AE1333D3E5A6B465491 /* Pods-LPCarouselViewSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LPCarouselViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litt1e-p.LPCarouselViewSample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04D2AAC31C5D01CB00F17AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473A9CA9344D68090DDB890F /* Pods-LPCarouselViewSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LPCarouselViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litt1e-p.LPCarouselViewSample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D2AAA51C5D01CB00F17AA1 /* Build configuration list for PBXProject "LPCarouselViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D2AABF1C5D01CB00F17AA1 /* Debug */,
+				04D2AAC01C5D01CB00F17AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D2AAC11C5D01CB00F17AA1 /* Build configuration list for PBXNativeTarget "LPCarouselViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D2AAC21C5D01CB00F17AA1 /* Debug */,
+				04D2AAC31C5D01CB00F17AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04D2AAA21C5D01CB00F17AA1 /* Project object */;
+}
