@@ -30,7 +30,7 @@
     } selectedBlock:^(NSInteger index) {
         NSLog(@"clicked1----%zi", index);
     }];
-    cv.scrollDuration = 1.f;
+//    cv.scrollDuration = 1.f;
     cv.titleLabelTextColor = [UIColor purpleColor];
     [self.view addSubview:cv];
     

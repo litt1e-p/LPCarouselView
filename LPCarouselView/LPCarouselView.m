@@ -1,6 +1,6 @@
 //
 //  LPCarouselView.m
-//  LPCarouselViewSample
+//  LPCarouselView
 //
 //  Created by litt1e-p on 16/1/30.
 //  Copyright © 2016年 litt1e-p. All rights reserved.
@@ -114,7 +114,7 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 - (void)addTimer
 {
     [self removeTimer];
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:_scrollDuration target:self selector:@selector(nextpage) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.scrollDuration target:self selector:@selector(nextpage) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     self.timer = timer;
 }
