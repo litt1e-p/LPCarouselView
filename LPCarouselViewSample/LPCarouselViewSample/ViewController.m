@@ -51,6 +51,7 @@
     } selectedBlock:^(NSInteger index) {
         NSLog(@"clicked2----%zi", index);
     }];
+    cv2.carouselImageViewContentMode = UIViewContentModeScaleAspectFit;
     cv2.scrollDuration = 2.f;
     [self.view addSubview:cv2];
 }

@@ -174,6 +174,8 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
             } else {
                 cell.imageView.image = [UIImage imageNamed:imagePath];
             }
+            cell.imageView.contentMode     = self.carouselImageViewContentMode;
+            cell.clipsToBounds             = YES;
         }
     }
     if (self.titles.count) {
@@ -183,8 +185,6 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
         cell.titleLabelHeight          = self.titleLabelHeight;
         cell.titleLabelTextColor       = self.titleLabelTextColor;
         cell.titleLabelTextFont        = self.titleLabelTextFont;
-        cell.imageView.contentMode     = self.carouselImageViewContentMode;
-        cell.clipsToBounds             = YES;
     }
     
     return cell;
