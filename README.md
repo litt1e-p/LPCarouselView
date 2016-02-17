@@ -35,6 +35,30 @@ LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, s
 ```
 `there are some properties for your configuration just follow the sample code`
 
+# Install
+
+- use cocoapods
+```swift
+pod 'LPCarouselView', '~> 1.2'
+```
+- manual import
+```swift
+just download lib folder and add into your project
+```
+
 # Screenshot
 
 <img src="screenshot.gif" width="320">
+
+# Release notes
+- 1.2
+
+add pageControl tintColor & infinite loop properties
+
+- 1.1
+
+scroll duration bugfix and add default duration
+
+- 1.0
+
+origin version.
