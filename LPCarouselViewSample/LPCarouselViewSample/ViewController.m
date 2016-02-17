@@ -32,6 +32,9 @@
     }];
 //    cv.scrollDuration = 1.f;
     cv.titleLabelTextColor = [UIColor purpleColor];
+    cv.pageControlCurrentPageColor = [UIColor redColor];
+    cv.pageControlNormalPageColor = [UIColor grayColor];
+    cv.turnOffInfiniteLoop = YES;
     [self.view addSubview:cv];
     
     //load local images

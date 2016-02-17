@@ -82,31 +82,35 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 {
     [super layoutSubviews];
     if (!_pageControl) {
-        CGFloat pageControlHeight  = 10;
-        CGFloat pageControlMargin  = 10;
-        UIPageControl *pageControl = [[UIPageControl alloc] init];
-        pageControl.enabled        = NO;
-        pageControl.numberOfPages  = self.images.count;
-        CGPoint pageControlCenter  = CGPointZero;
-        CGSize pageControlSize     = [pageControl sizeForNumberOfPages:self.images.count];
+        CGFloat pageControlHeight                 = 10;
+        CGFloat pageControlMargin                 = 10;
+        UIPageControl *pageControl                = [[UIPageControl alloc] init];
+        pageControl.enabled                       = NO;
+        pageControl.numberOfPages                 = self.images.count;
+        CGPoint pageControlCenter                 = CGPointZero;
+        CGSize pageControlSize                    = [pageControl sizeForNumberOfPages:self.images.count];
         switch (self.pageControlPosition) {
             case CarouselViewPageControlPositionRight:
                 pageControlCenter = CGPointMake(self.bounds.size.width - pageControlSize.width * 0.5 - pageControlMargin, self.bounds.size.height - pageControlHeight);
                 break;
-                
+
             case CarouselViewPageControlPositionLeft:
                 pageControlCenter = CGPointMake(pageControlSize.width * 0.5 + pageControlMargin, self.bounds.size.height - pageControlHeight);
                 break;
-                
+
             default:
                 pageControlCenter = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height - pageControlHeight);
                 break;
         }
-        pageControl.bounds         = CGRectMake(0, 0, pageControlSize.width, pageControlHeight);
-        pageControl.center         = pageControlCenter;
-        _pageControl               = pageControl;
+        pageControl.bounds                        = CGRectMake(0, 0, pageControlSize.width, pageControlHeight);
+        pageControl.center                        = pageControlCenter;
+        pageControl.pageIndicatorTintColor        = self.pageControlNormalPageColor;
+        pageControl.currentPageIndicatorTintColor = self.pageControlCurrentPageColor;
+        _pageControl                              = pageControl;
         [self addSubview:pageControl];
-        [self addTimer];
+        if (!self.turnOffInfiniteLoop) {
+            [self addTimer];
+        }
     }
 }
 
@@ -173,14 +177,14 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
         }
     }
     if (self.titles.count) {
-        cell.title = self.titles[indexPath.item];
+        cell.title                     = self.titles[indexPath.item];
         //config
         cell.titleLabelBackgroundColor = self.titleLabelBackgroundColor;
-        cell.titleLabelHeight = self.titleLabelHeight;
-        cell.titleLabelTextColor = self.titleLabelTextColor;
-        cell.titleLabelTextFont = self.titleLabelTextFont;
-        cell.imageView.contentMode = self.carouselImageViewContentMode;
-        cell.clipsToBounds = YES;
+        cell.titleLabelHeight          = self.titleLabelHeight;
+        cell.titleLabelTextColor       = self.titleLabelTextColor;
+        cell.titleLabelTextFont        = self.titleLabelTextFont;
+        cell.imageView.contentMode     = self.carouselImageViewContentMode;
+        cell.clipsToBounds             = YES;
     }
     
     return cell;
@@ -219,15 +223,29 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
     return _carouselImageViewContentMode ? : UIViewContentModeScaleAspectFill;
 }
 
+- (UIColor *)pageControlCurrentPageColor
+{
+    return _pageControlCurrentPageColor ? : [UIColor whiteColor];
+}
+
+- (UIColor *)pageControlNormalPageColor
+{
+    return _pageControlNormalPageColor ? : [UIColor colorWithWhite:1.f alpha:0.5];
+}
+
 #pragma mark - scrollView delegate 📌
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    [self removeTimer];
+    if (!self.turnOffInfiniteLoop) {
+        [self removeTimer];
+    }
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    [self addTimer];
+    if (!self.turnOffInfiniteLoop) {
+        [self addTimer];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

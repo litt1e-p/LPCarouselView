@@ -34,6 +34,9 @@ typedef NSArray *(^TitlesDataSourceBlock)();
 @property (nonatomic, strong) UIFont  *titleLabelTextFont;
 @property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
 @property (nonatomic, assign) CGFloat titleLabelHeight;
+@property (nonatomic, strong) UIColor *pageControlCurrentPageColor;
+@property (nonatomic, strong) UIColor *pageControlNormalPageColor;
+@property (nonatomic, assign) BOOL turnOffInfiniteLoop;//default is NO
 
 + (instancetype)carouselViewWithFrame:(CGRect)frame
                      placeholderImage:(UIImage *)placeholderImage
