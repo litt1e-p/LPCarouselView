@@ -54,16 +54,16 @@ just download lib folder and add into your project
 
 - 1.2.1
 
-image contentMode bugfix
+`image contentMode bugfix`
 
 - 1.2
 
-add pageControl tintColor & infinite loop properties
+`add pageControl tintColor & infinite loop properties`
 
 - 1.1
 
-scroll duration bugfix and add default duration
+`scroll duration bugfix and add default duration`
 
 - 1.0
 
-origin version.
+`origin version.`
