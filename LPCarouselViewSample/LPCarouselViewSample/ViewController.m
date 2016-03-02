@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //load remote images
+//    load remote images
     LPCarouselView *cv = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 150) placeholderImage:[UIImage imageNamed:@"carousel01"] images:^NSArray *{
         return @[
                  @"https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1667332/pickle.png",
@@ -37,7 +37,7 @@
     cv.turnOffInfiniteLoop = YES;
     [self.view addSubview:cv];
     
-    //load local images
+//    load local images
     LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 150) placeholderImage:nil images:^NSArray *{
         return @[
                  @"carousel01.png",

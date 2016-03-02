@@ -56,8 +56,9 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
     carouselView.didSelectCarouselItemBlock = selectedBlock ? selectedBlock : nil;
     carouselView.placeholderImageView = [[UIImageView alloc] init];
     carouselView.placeholderImage = placeholderImage ? : nil;
-    
-    [carouselView.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:kMaxSections / 2] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+    if (images().count > 0) {
+        [carouselView.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:kMaxSections / 2] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+    }
     return carouselView;
 }
 
@@ -131,17 +132,19 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 
 - (void)nextpage
 {
-    NSIndexPath *currentIndexPath      = [[self.collectionView indexPathsForVisibleItems] lastObject];
-    NSIndexPath *currentIndexPathReset = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:kMaxSections/2];
-    [self.collectionView scrollToItemAtIndexPath:currentIndexPathReset atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
-    NSInteger nextItem    = currentIndexPathReset.item + 1;
-    NSInteger nextSection = currentIndexPathReset.section;
-    if (nextItem == self.images.count) {
-        nextItem = 0;
-        nextSection++;
+    if (self.images.count > 0) {
+        NSIndexPath *currentIndexPath      = [[self.collectionView indexPathsForVisibleItems] lastObject];
+        NSIndexPath *currentIndexPathReset = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:kMaxSections/2];
+        [self.collectionView scrollToItemAtIndexPath:currentIndexPathReset atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+        NSInteger nextItem    = currentIndexPathReset.item + 1;
+        NSInteger nextSection = currentIndexPathReset.section;
+        if (nextItem == self.images.count) {
+            nextItem = 0;
+            nextSection++;
+        }
+        NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:nextItem inSection:nextSection];
+        [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
     }
-    NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:nextItem inSection:nextSection];
-    [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
 }
 
 #pragma mark - UICollectionViewDataSource & delegate 📌
