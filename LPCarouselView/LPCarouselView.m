@@ -74,6 +74,7 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
     collectionView.pagingEnabled                  = YES;
     collectionView.backgroundColor                = [UIColor clearColor];
     collectionView.showsHorizontalScrollIndicator = NO;
+    collectionView.scrollsToTop                   = NO;
     _collectionView                               = collectionView;
     [self addSubview:collectionView];
     [_collectionView registerClass:[LPCarouselViewCell class] forCellWithReuseIdentifier:kLPCarouselCollectionViewCellID];
