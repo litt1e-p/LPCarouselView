@@ -33,13 +33,13 @@ LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, s
         NSLog(@"clicked2----%zi", index);
     }];
 ```
-`there are some properties for your configuration just follow the sample code`
+`there are some properties (pageControlIndicatorColors)for your configuration just follow the sample code`
 
 # Install
 
 - use cocoapods
 ```swift
-pod 'LPCarouselView', '~> 1.2.2'
+pod 'LPCarouselView', '~> 1.2.3'
 ```
 - manual import
 ```swift
@@ -51,6 +51,10 @@ just download lib folder and add into your project
 <img src="screenshot.gif" width="320">
 
 # Release notes
+
+- 1.2.3
+
+`fix the bug of scrollToTop invalid`
 
 - 1.2.2
 
