@@ -262,7 +262,9 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 - (void)setScrollDuration:(CGFloat)scrollDuration
 {
     _scrollDuration = scrollDuration;
-    [self addTimer];
+    if (!self.turnOffInfiniteLoop) {
+        [self addTimer];
+    }
 }
 
 - (CGFloat)scrollDuration
