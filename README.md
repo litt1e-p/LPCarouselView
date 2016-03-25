@@ -52,6 +52,10 @@ just download lib folder and add into your project
 
 # Release notes
 
+- 1.2.4
+
+`fix bug of setting scrollDuration causing the infiniteLoop`
+
 - 1.2.3
 
 `fix the bug of scrollToTop invalid`
