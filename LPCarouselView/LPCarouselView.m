@@ -134,6 +134,9 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 - (void)nextpage
 {
     if (self.images.count > 0) {
+        if (self.images.count == 1 && self.turnOffSingleImageLoop) {
+            return;
+        }
         NSIndexPath *currentIndexPath      = [[self.collectionView indexPathsForVisibleItems] lastObject];
         NSIndexPath *currentIndexPathReset = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:kMaxSections/2];
         [self.collectionView scrollToItemAtIndexPath:currentIndexPathReset atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
@@ -151,7 +154,11 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 #pragma mark - UICollectionViewDataSource & delegate 📌
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return kMaxSections;
+    if (self.images.count == 1 && self.turnOffSingleImageLoop) {
+        return 1;
+    } else {
+        return kMaxSections;
+    }
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -235,6 +242,12 @@ static NSString *const kLPCarouselCollectionViewCellID = @"kLPCarouselCollection
 - (UIColor *)pageControlNormalPageColor
 {
     return _pageControlNormalPageColor ? : [UIColor colorWithWhite:1.f alpha:0.5];
+}
+
+- (void)setTurnOffSingleImageLoop:(BOOL)turnOffSingleImageLoop
+{
+    _turnOffSingleImageLoop = turnOffSingleImageLoop;
+    [self.collectionView reloadData];
 }
 
 #pragma mark - scrollView delegate 📌
