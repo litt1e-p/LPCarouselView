@@ -39,7 +39,7 @@ LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, s
 
 - use cocoapods
 ```swift
-pod 'LPCarouselView', '~> 1.2.4'
+pod 'LPCarouselView', '~> 1.2.5'
 ```
 - manual import
 ```swift
@@ -51,6 +51,10 @@ just download lib folder and add into your project
 <img src="screenshot.gif" width="320">
 
 # Release notes
+
+- 1.2.5
+
+`add turn off single image loop`
 
 - 1.2.4
 
