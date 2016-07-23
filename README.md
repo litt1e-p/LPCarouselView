@@ -33,7 +33,7 @@ LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, s
         NSLog(@"clicked2----%zi", index);
     }];
 ```
-`there are some properties (pageControlIndicatorColors)for your configuration just follow the sample code`
+`there are some attributes (pageControlIndicatorColors)for your configuration just follow the sample code`
 
 # Install
 
