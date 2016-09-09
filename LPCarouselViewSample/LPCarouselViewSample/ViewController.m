@@ -22,8 +22,8 @@
     LPCarouselView *cv = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 200, self.view.bounds.size.width, 150) placeholderImage:[UIImage imageNamed:@"carousel01"] images:^NSArray *{
         return @[
                  @"https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1667332/pickle.png",
-//                 @"https://d13yacurqjgara.cloudfront.net/users/610286/screenshots/2012918/eggplant.png",
-//                 @"https://d13yacurqjgara.cloudfront.net/users/514774/screenshots/1985501/ill_2-01.png",
+                 @"https://d13yacurqjgara.cloudfront.net/users/610286/screenshots/2012918/eggplant.png",
+                 @"https://d13yacurqjgara.cloudfront.net/users/514774/screenshots/1985501/ill_2-01.png",
                  ];
     } titles:^NSArray *{
         return @[@"NO. 1", @"NO. 2", @"NO. 3"];
