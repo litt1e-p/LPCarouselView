@@ -54,7 +54,7 @@ just download lib folder and add into your project
 
 - 1.2.6
 
-`update SDWebImage dependency`
+`update SDWebImage dependencies`
 
 - 1.2.5
 
