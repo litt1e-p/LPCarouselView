@@ -52,6 +52,10 @@ just download lib folder and add into your project
 
 # Release notes
 
+- 1.2.6
+
+`update SDWebImage dependency`
+
 - 1.2.5
 
 `add turn off single image loop`
