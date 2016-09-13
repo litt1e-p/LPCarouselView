@@ -39,7 +39,7 @@ LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, s
 
 - use cocoapods
 ```swift
-pod 'LPCarouselView', '~> 1.2.5'
+pod 'LPCarouselView', '~> 1.2.6'
 ```
 - manual import
 ```swift
