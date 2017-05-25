@@ -39,7 +39,7 @@ LPCarouselView *cv2 = [LPCarouselView carouselViewWithFrame:CGRectMake(0, 400, s
 
 - use cocoapods
 ```swift
-pod 'LPCarouselView', '~> 1.2.6'
+pod 'LPCarouselView', '~> 1.3.0'
 ```
 - manual import
 ```swift
@@ -51,6 +51,10 @@ just download lib folder and add into your project
 <img src="screenshot.gif" width="320">
 
 # Release notes
+
+- 1.3.0
+
+`update SDWebImage to version 4.x`
 
 - 1.2.6
 
